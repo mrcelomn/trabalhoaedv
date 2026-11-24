@@ -13,6 +13,7 @@ Este trabalho investiga, a partir das estatísticas coletivas das equipes, como 
 | Marco 1 | [`Marco_1.pdf`](Marco_1.pdf) | Proposta do projeto e perguntas de pesquisa |
 | Marco 2 | [`Marco_2.ipynb`](Marco_2.ipynb) | Entrega intermediária: notebook em forma de artigo, com uma visualização inicial por pergunta |
 | Marco 3 | [`Marco_3.ipynb`](Marco_3.ipynb) · [`Marco_3.html`](Marco_3.html) | Entrega final: notebook completo, com todas as visualizações e a conclusão |
+| Marco 3 | [`Apresentacao.pdf`](Apresentacao.pdf) | Slides da apresentação de 10 minutos |
 | Marco 3 | [`DECLARACAO_DE_CONTRIBUICOES.md`](DECLARACAO_DE_CONTRIBUICOES.md) | Declaração de contribuições (quem fez o quê) |
 
 ## Estrutura do repositório
@@ -25,6 +26,7 @@ Este trabalho investiga, a partir das estatísticas coletivas das equipes, como 
 ├── Marco_2.ipynb                   # entrega do Marco 2
 ├── Marco_3.ipynb                   # entrega final (notebook executado)
 ├── Marco_3.html                    # entrega final exportada (abre no navegador, com gráficos interativos)
+├── Apresentacao.pdf                # slides da apresentação
 ├── DECLARACAO_DE_CONTRIBUICOES.md  # quem fez o quê
 ├── requirements.txt
 ├── LICENSE
