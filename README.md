@@ -6,35 +6,44 @@ Este trabalho investiga, a partir das estatísticas coletivas das equipes, como 
 
 **Grupo:** Diogo Vieira dos Santos · João Gabriel de Souza Machado · Marcelo Maiato Neves
 
-## Entregas
-
-| Marco | Arquivo | Conteúdo |
-|---|---|---|
-| Marco 1 | [`Marco_1.pdf`](Marco_1.pdf) | Proposta do projeto e perguntas de pesquisa |
-| Marco 2 | [`Marco_2.ipynb`](Marco_2.ipynb) | Entrega intermediária: notebook em forma de artigo, com uma visualização inicial por pergunta |
-| Marco 3 | [`Marco_3.ipynb`](Marco_3.ipynb) | Entrega final: notebook completo, com todas as visualizações e a conclusão |
-| Marco 3 | [`Apresentacao.pdf`](Apresentacao.pdf) | Slides da apresentação de 10 minutos |
-| Marco 3 | [`DECLARACAO_DE_CONTRIBUICOES.md`](DECLARACAO_DE_CONTRIBUICOES.md) | Declaração de contribuições (quem fez o quê) |
-
 ## Estrutura do repositório
 
 ```
 .
-├── data/                           # dados brutos (CSVs do Kaggle) e _info.md com a fonte
-├── sem_comentarios/                # versões dos notebooks sem comentários no código
-├── Marco_1.pdf                     # entrega do Marco 1
-├── Marco_2.ipynb                   # entrega do Marco 2
-├── Marco_3.ipynb                   # entrega final (notebook executado)
-├── Apresentacao.pdf                # slides da apresentação
-├── DECLARACAO_DE_CONTRIBUICOES.md  # quem fez o quê
-├── requirements.txt
+├── marco_1/
+│   └── Marco_1.pdf                       # proposta e perguntas de pesquisa
+├── marco_2/
+│   └── Marco_2.ipynb                     # entrega intermediária
+├── marco_3/                              # entrega final
+│   ├── Marco_3.ipynb                     # notebook final
+│   ├── Apresentacao.pdf                  # slides da apresentação (10 min)
+│   └── DECLARACAO_DE_CONTRIBUICOES.md    # quem fez o quê
+├── sem_comentarios/                      # notebooks dos Marcos 2 e 3 sem comentários no código
+├── data/                                 # CSVs da base do Kaggle
+├── requirements.txt                      # pacotes necessários
 ├── LICENSE
 └── README.md
 ```
 
+## Entregas
+
+| Marco | O que é | Onde está |
+|---|---|---|
+| 1 | Proposta: problema, dados e perguntas de pesquisa | [`marco_1/Marco_1.pdf`](marco_1/Marco_1.pdf) |
+| 2 | Entrega intermediária: notebook em forma de artigo, com uma visualização inicial por pergunta | [`marco_2/Marco_2.ipynb`](marco_2/Marco_2.ipynb) |
+| 3 | Entrega final: notebook completo, slides e declaração de contribuições | [`marco_3/`](marco_3/) |
+
 ## Dados
 
-Os dados vêm da base [NBA Stats (1947–present)](https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats), de Sumitro Datta, que reúne estatísticas do Basketball-Reference. No Marco 2, foram usados os arquivos `Team_Totals.csv` e `Team_Summaries.csv`. No Marco 3, foram acrescentados `Opponent_Totals.csv` (lado defensivo), `Player_Shooting.csv` e `Player_Totals.csv` (arremessos por distância, desde 1997) e `Advanced.csv` (qualidade do elenco, pelo BPM).
+Os dados vêm da base [NBA Stats (1947–present)](https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats), de Sumitro Datta, que reúne estatísticas do Basketball-Reference. A pasta `data/` tem a base inteira; o trabalho usa seis arquivos:
+
+| Arquivo | Uso |
+|---|---|
+| `Team_Totals.csv` | Totais de cada equipe por temporada (Marcos 2 e 3) |
+| `Team_Summaries.csv` | Vitórias, ritmo, eficiência e taxas (Marcos 2 e 3) |
+| `Opponent_Totals.csv` | Lado defensivo (Marco 3) |
+| `Player_Shooting.csv` e `Player_Totals.csv` | Arremessos por distância, desde 1997 (Marco 3) |
+| `Advanced.csv` | Qualidade do elenco, pelo BPM (Marco 3) |
 
 ## Principais achados
 
@@ -45,11 +54,14 @@ Os dados vêm da base [NBA Stats (1947–present)](https://www.kaggle.com/datase
 5. As equipes **não convergiram** para um estilo único: a liga mudou de lugar, não de diversidade.
 6. As maiores mudanças se concentram em **1954–59, 1969–74 e 2015–20**.
 
-## Como reproduzir
+## Como rodar
 
-```
-pip install -r requirements.txt
-jupyter notebook Marco_3.ipynb
-```
+1. Instale os pacotes (de preferência num ambiente virtual):
 
-O notebook lê os CSVs de `data/` e roda em poucos segundos. Os gráficos são feitos com Altair e são interativos (seleção pela legenda, zoom, menu de franquias, dicas ao passar o mouse).
+   ```
+   pip install -r requirements.txt
+   ```
+
+2. Abra `marco_3/Marco_3.ipynb` no Jupyter ou no VS Code e rode todas as células. O notebook lê os CSVs de `data/` e roda em poucos segundos.
+
+Os gráficos são feitos com Altair e são interativos (seleção pela legenda, zoom, menu de franquias e valores ao passar o mouse). O GitHub não exibe gráficos Altair na pré-visualização do notebook: para vê-los, rode o notebook.
