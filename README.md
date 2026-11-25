@@ -21,7 +21,6 @@ Este trabalho investiga, a partir das estatísticas coletivas das equipes, como 
 │   └── DECLARACAO_DE_CONTRIBUICOES.md    # quem fez o quê
 ├── data/                                 # CSVs da base do Kaggle
 ├── requirements.txt                      # pacotes necessários
-├── LICENSE
 └── README.md
 ```
 
