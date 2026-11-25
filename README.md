@@ -18,7 +18,6 @@ Este trabalho investiga, a partir das estatísticas coletivas das equipes, como 
 │   ├── Marco_3.ipynb                     # notebook final
 │   ├── Apresentacao.pdf                  # slides da apresentação (10 min)
 │   └── DECLARACAO_DE_CONTRIBUICOES.md    # quem fez o quê
-├── sem_comentarios/                      # notebook do Marco 3 sem comentários no código
 ├── data/                                 # CSVs da base do Kaggle
 ├── requirements.txt                      # pacotes necessários
 ├── LICENSE
