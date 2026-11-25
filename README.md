@@ -26,11 +26,11 @@ Este trabalho investiga, a partir das estatísticas coletivas das equipes, como 
 
 ## Entregas
 
-| Marco | O que é | Onde está |
+| Marco | O que é | Arquivos |
 |---|---|---|
-| 1 | Proposta: problema, dados e perguntas de pesquisa | [`marco_1/Marco_1.pdf`](marco_1/Marco_1.pdf) |
-| 2 | Entrega intermediária: notebook em forma de artigo, com uma visualização inicial por pergunta | [`marco_2/Marco_2.ipynb`](marco_2/Marco_2.ipynb) |
-| 3 | Entrega final: notebook completo, slides e declaração de contribuições | [`marco_3/`](marco_3/) |
+| 1 | Proposta: problema, dados e perguntas de pesquisa | [Proposta (PDF)](marco_1/Marco_1.pdf) |
+| 2 | Entrega intermediária: notebook em forma de artigo | [Notebook](marco_2/Marco_2.ipynb) |
+| 3 | Entrega final | [Notebook](marco_3/Marco_3.ipynb) · [Slides](marco_3/Apresentacao.pdf) · [Gráficos](marco_3/graficos/) · [Contribuições](marco_3/DECLARACAO_DE_CONTRIBUICOES.md) |
 
 ## Dados
 
